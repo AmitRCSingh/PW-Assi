@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #07203d;
+    color: white;
+    font-size: 15px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.external{
+    color: green;
+    background: yellow;
+    padding: 9px;
+    margin: 9px;
+    border: 0.8px solid rgb(223, 214, 220);
+}
+
+/* style by external CSS */
+/* External CSS has the lowest priority if inline or internal CSS are specified. */
+.target{
+    color: rgb(9, 6, 96); /* This color will be overridden by internal or inline CSS if specified */
+    background: white; /* This background color will be overridden by internal or inline CSS if specified */
+    padding: 9px;
+    margin: 9px;
+    border: 0.8px solid black; /* This border will be overridden by internal or inline CSS if specified */
+}

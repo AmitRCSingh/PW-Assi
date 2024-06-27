@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charali</title>
+    <!-- 1.  Linking with External Css  -->
+    <link rel="stylesheet" href="./question1.css" />
+
+    <!-- 2.Internal Css  -->
+    <style>
+      /* Styling for the div with internal CSS */
+      .internal {
+        color: rgb(45, 8, 211);
+        background: white;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(223, 214, 220);
+      }
+      /* style by internal CSS */
+      /* Internal CSS has higher priority than external CSS but lower than inline CSS. */
+      .target {
+        color: rgb(234, 10, 189); /* This will be overridden by inline CSS if specified */
+        background: rgb(210, 229, 147); /* This will be overridden by inline CSS if specified */
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black; /* This will be overridden by inline CSS if specified */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">There are three way to add css in html file.</h1>
+    </header>
+
+    <!-- This is a div with external CSS -->
+    <div class="external">This is the div with <em>External CSS.</em></div>
+
+    <!-- This is a div with internal CSS -->
+    <div class="internal">This is the div with <em>Internal CSS.</em></div>
+
+    <!-- 3. Inline CSS -->
+     <!-- This is a div with inline CSS. Inline CSS has the highest priority. -->
+    <div
+      class="inline"
+      style="
+        color: rgb(247, 247, 242);
+        background-color: #010003;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgb(223, 214, 220);
+      "
+    >
+      This is the div with <em>Inline CSS.</em>
+    </div>
+
+    <!-- Target the same elements with inline, internal and external CSS. -->
+
+    <h1 class="heading">
+      Target the same elements with inline, internal and external CSS.
+    </h1>
+    <!-- Style by inline CSS -->
+    <div
+      class="target"
+      style="
+        color: rgb(255, 72, 0);
+        background-color: #95e0eb;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid rgb(6, 134, 34);
+      "
+    >
+      This is the div tag with apply all CSS.
+    </div>
+  </body>
+</html>
